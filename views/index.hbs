@@ -1,0 +1,121 @@
+{{#if isLogedIn}}
+    <input id="x-access-token" type="hidden" value="{{token}}">
+{{/if}}
+<header role="banner" class="section site-head cover-image fluid-embed fluid-embed--4by3">
+    <div class="fluid-embed__content u-align-middle">
+        <div class="u-align-middle__content">
+            <div class="container">
+                <h1 class="site-title" data-name="title" {{#if isLogedIn}}contenteditable{{/if}}>{{title}}</h1>
+                <p class="site-desc">
+                    <span data-name="openTitle" {{#if isLogedIn}}contenteditable{{/if}}>{{openTitle}}</span>
+                    <span class="beta" data-name="openTime" {{#if isLogedIn}}contenteditable{{/if}}>{{openTime}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title" data-name="menuTitle" {{#if isLogedIn}}contenteditable{{/if}}>{{menuTitle}}</h2>
+
+            <div data-name="menu" class="grid grid--block-half-sm grid--block-4-of-9-m">
+                {{#each menu}}
+                    <div class="grid__item">
+                        <h3 class="delta" data-list="menu" data-name="title" data-index="{{@index}}" {{#if ../isLogedIn}}contenteditable{{/if}}>{{title}}</h3>
+                        <p data-list="menu" data-name="description" data-index="{{@index}}" {{#if ../isLogedIn}}contenteditable{{/if}}>{{description}}</p>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--highlighted">
+        <div class="container">
+            <h2 class="section__title" data-name="lunchTitle" {{#if isLogedIn}}contenteditable{{/if}}>{{lunchTitle}}</h2>
+
+            <div class="grid grid--block-half-sm">
+                <div class="grid__item">
+                    <h3 class="gamma">Måndag</h3>
+                    <ul class="list-bare" data-name="monday" data-list="true" {{#if isLogedIn}}contenteditable{{/if}}>
+                        {{#each monday}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="grid__item grid__item--reverse">
+                    <h3 class="gamma">Tisdag</h3>
+                    <ul class="list-bare"  data-name="tuesday" data-list="true" {{#if isLogedIn}}contenteditable{{/if}}>
+                        {{#each tuesday}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="grid__item">
+                    <h3 class="gamma">Onsdag</h3>
+                    <ul class="list-bare"  data-name="wednesday" data-list="true" {{#if isLogedIn}}contenteditable{{/if}}>
+                        {{#each wednesday}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="grid__item grid__item--reverse">
+                    <h3 class="gamma">Torsdag</h3>
+                    <ul class="list-bare" data-name="thursday" data-list="true" {{#if isLogedIn}}contenteditable{{/if}}>
+                        {{#each thursday}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="grid__item">
+                    <h3 class="gamma">Fredag</h3>
+                    <ul class="list-bare" data-name="friday" data-list="true" {{#if isLogedIn}}contenteditable{{/if}}>
+                        {{#each friday}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section map cover-image fluid-embed fluid-embed--16by9">
+        <div id="map" class="fluid-embed__content u-align-middle"></div>
+        <div class="fluid-embed__content u-align-middle">
+            <div class="u-align-middle__content">
+                <div class="container">
+                    <h2 class="visuallyhidden">Hitta hit</h2>
+
+                    <div class="grid">
+                        <div class="grid__item col-half-s push-half-s col-4-of-9-m">
+                            <div class="vcard map__location">
+                                <strong class="fn org gamma">Mozarteum</strong><br class="hide">
+                                <p class="adr">
+                                    <span class="street-address">Kungsgatan 82</span>,<br>
+                                    <span class="postal-code">112 27</span> <span class="locality">Stockholm</span>
+                                </p>
+                                <p><a href="https://www.google.se/maps/place/Kungsgatan+82,+112+27+Stockholm">Se på google maps</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container--wide">
+            <h2 class="visuallyhidden">Bilder</h2>
+
+            <div class="grid">
+                <figure class="grid__item col-full-s"><img src="/public/images/1.jpg" alt=""></figure>
+                <figure class="grid__item col-half-s"><img src="/public/images/2.jpg" alt=""></figure>
+                <figure class="grid__item col-half-s"><img src="/public/images/3.jpg" alt=""></figure>
+                <figure class="grid__item col-full-s"><img src="/public/images/4.jpg" alt=""></figure>
+            </div>
+        </div>
+    </section>
+
+</main>

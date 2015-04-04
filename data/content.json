@@ -1,0 +1,63 @@
+{
+    "title": "asd",
+    "openTitle": "Måndag till fredag",
+    "openTime": "10.00 - 20.00",
+    "menuTitle": "Middag",
+    "menu": [
+        {
+            "title": "Schitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Pariserschitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Schitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Pariserschitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Schitzel asd",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Schitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "Pariserschitzel",
+            "description": "Klassisk schitzel med stekt potatis, kapris och ansjovis"
+        },
+        {
+            "title": "asd",
+            "description": ""
+        }
+    ],
+    "lunchTitle": "Lunch",
+    "monday": [
+        "Laxpasta med sås 85kr",
+        "Köttbullar med mos 85kr",
+        "foo"
+    ],
+    "tuesday": [
+        "Laxpasta med sås 85kr",
+        "Köttbullar med mos 85",
+        "krasd"
+    ],
+    "wednesday": [
+        "Laxpasta med sås 85kr",
+        "Köttbullar med mos 85kr"
+    ],
+    "thursday": [
+        "Laxpasta med sås 85kr",
+        "Köttbullar med mos 85kr"
+    ],
+    "friday": [
+        "Laxpasta med sås 85kr",
+        "Köttbullar med mos 85kr"
+    ]
+}
