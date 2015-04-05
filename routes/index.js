@@ -8,7 +8,6 @@ var filePath = path.join(__dirname, '../data/content.json');
 /* GET home page. */
 router.get('/', function(req, res, next) {
     fs.readFile(filePath, {encoding: 'utf-8'}, function (err, data) {
-        debugger
 
         var isLogedIn = false;
         if (err) {
